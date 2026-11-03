@@ -1,0 +1,23 @@
+name: SEC_ANALYSIS
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - '.github/**'
+  pull_request:
+    branches: [develop, main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  security-events: write
+  actions: read
+  pull-requests: write
+
+jobs:
+  sec_job:
+    uses: mscgh-poc/devsecops-templates/.github/workflows/ci.yml@main
+    with:
+      node-version: '22'
+
