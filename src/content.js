@@ -8,5 +8,5 @@
 
 module.exports = {
   message: 'Bienvenido Developers',
-  subtitle: 'El mejor cafe para las mejores lineas de codigo.',
+  subtitle: 'El mejor cafe.',
 };
