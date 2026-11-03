@@ -3,42 +3,147 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ENEISOFT Pipeline Demo</title>
+  <title>DevBrew Coffee</title>
   <link rel="stylesheet" href="/css/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1 id="main-message">Cargando...</h1>
-      <p id="subtitle" class="subtitle"></p>
-    </header>
 
-    <section class="info-grid" id="info-grid">
-      <div class="card" id="build-card">
-        <h3>Build</h3>
-        <div class="card-content" id="build-info">Cargando...</div>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <div class="nav__brand">
+        <span class="nav__icon">&#9749;</span>
+        <span class="nav__name">DevBrew</span>
       </div>
-      <div class="card" id="runtime-card">
-        <h3>Runtime</h3>
-        <div class="card-content" id="runtime-info">Cargando...</div>
+      <div class="nav__links">
+        <a href="#menu">Menu</a>
+        <a href="#about">Nosotros</a>
+        <a href="#deploy-info">Deploy</a>
       </div>
-      <div class="card" id="k8s-card">
-        <h3>Kubernetes</h3>
-        <div class="card-content" id="k8s-info">Cargando...</div>
-      </div>
-      <div class="card" id="pipeline-card">
-        <h3>Pipeline</h3>
-        <div class="card-content" id="pipeline-info">Cargando...</div>
-      </div>
-    </section>
+    </div>
+  </nav>
 
-    <footer>
-      <p>ENEISOFT XVI - Pipeline DevSecOps Demo</p>
-    </footer>
-  </div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <p class="hero__tag">COFFEE SHOP</p>
+      <h1 class="hero__title" id="main-message">Bienvenido Developers</h1>
+      <p class="hero__subtitle" id="subtitle">El mejor cafe para las mejores lineas de codigo.</p>
+      <a href="#menu" class="btn">Ver Menu</a>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="section" id="menu">
+    <div class="container">
+      <h2 class="section__title">Nuestro Menu</h2>
+      <p class="section__sub">Seleccion artesanal para desarrolladores exigentes</p>
+      <div class="grid">
+
+        <div class="card">
+          <div class="card__emoji">&#9749;</div>
+          <h3 class="card__name">Espresso Debug</h3>
+          <p class="card__desc">Shot doble para sesiones de debugging intensas. Sin azucar, sin bugs.</p>
+          <span class="card__price">S/ 8.50</span>
+        </div>
+
+        <div class="card">
+          <div class="card__emoji">&#127861;</div>
+          <h3 class="card__name">Latte Deploy</h3>
+          <p class="card__desc">Suave y cremoso. Perfecto para celebrar un deploy exitoso a produccion.</p>
+          <span class="card__price">S/ 12.00</span>
+        </div>
+
+        <div class="card">
+          <div class="card__emoji">&#127846;</div>
+          <h3 class="card__name">Mocha Merge</h3>
+          <p class="card__desc">Chocolate + cafe. Tan satisfactorio como un merge sin conflictos.</p>
+          <span class="card__price">S/ 14.00</span>
+        </div>
+
+        <div class="card">
+          <div class="card__emoji">&#129483;</div>
+          <h3 class="card__name">Cold Brew Pipeline</h3>
+          <p class="card__desc">24 horas de extraccion en frio. Largo como un pipeline de CI/CD.</p>
+          <span class="card__price">S/ 15.00</span>
+        </div>
+
+        <div class="card">
+          <div class="card__emoji">&#127856;</div>
+          <h3 class="card__name">Cappuccino Sprint</h3>
+          <p class="card__desc">Rapido, con espuma perfecta. Ideal para daily standups.</p>
+          <span class="card__price">S/ 11.00</span>
+        </div>
+
+        <div class="card">
+          <div class="card__emoji">&#127863;</div>
+          <h3 class="card__name">Matcha Kubernetes</h3>
+          <p class="card__desc">Te verde orquestado con leche. Escalable y saludable.</p>
+          <span class="card__price">S/ 13.50</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section section--dark" id="about">
+    <div class="container">
+      <h2 class="section__title">Sobre DevBrew</h2>
+      <p class="section__sub">Donde el codigo y el cafe se encuentran</p>
+      <div class="about-grid">
+        <div class="about-item">
+          <div class="about-item__icon">&#128187;</div>
+          <h3>WiFi de alta velocidad</h3>
+          <p>Conexion simetrica de 1 Gbps para que tus pushes vuelen.</p>
+        </div>
+        <div class="about-item">
+          <div class="about-item__icon">&#9889;</div>
+          <h3>Enchufes en cada mesa</h3>
+          <p>Nunca te quedas sin bateria en medio de un hotfix.</p>
+        </div>
+        <div class="about-item">
+          <div class="about-item__icon">&#127925;</div>
+          <h3>Musica lo-fi 24/7</h3>
+          <p>El soundtrack perfecto para entrar en flow state.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPLOY INFO -->
+  <section class="section" id="deploy-info">
+    <div class="container">
+      <h2 class="section__title">Info del Deploy</h2>
+      <p class="section__sub">Datos en tiempo real de esta instancia</p>
+      <div class="grid grid--3">
+        <div class="card card--info">
+          <h3 class="card__label">BUILD</h3>
+          <div id="build-info" class="card__data">Cargando...</div>
+        </div>
+        <div class="card card--info">
+          <h3 class="card__label">RUNTIME</h3>
+          <div id="runtime-info" class="card__data">Cargando...</div>
+        </div>
+        <div class="card card--info">
+          <h3 class="card__label">KUBERNETES</h3>
+          <div id="k8s-info" class="card__data">Cargando...</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>&#9749; DevBrew Coffee &mdash; ENEISOFT XVI Demo</span>
+      <span class="footer__right">Desplegado con GitHub Actions + AKS</span>
+    </div>
+  </footer>
+
   <script src="/js/app.js"></script>
 </body>
 </html>

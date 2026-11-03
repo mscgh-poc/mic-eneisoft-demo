@@ -1,12 +1,12 @@
 'use strict';
 
 /**
- * Edita este archivo para la demo en vivo.
- * Cambia el mensaje, haz commit y push a develop.
- * El pipeline se encargara del resto.
+ * EDITA ESTE ARCHIVO PARA LA DEMO EN VIVO.
+ * Cambia el mensaje, haz commit, push a develop,
+ * PR a main y observa el despliegue.
  */
 
 module.exports = {
-  message: 'Hola ENEISOFT XVI!',
-  subtitle: 'Este mensaje llego automaticamente del git push a la nube.',
+  message: 'Bienvenido Developers',
+  subtitle: 'El mejor cafe para las mejores lineas de codigo.',
 };
