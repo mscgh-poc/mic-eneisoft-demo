@@ -8,5 +8,5 @@
 
 module.exports = {
   message: 'Bienvenido Developers',
-  subtitle: 'El mejor cafe del mundo.',
+  subtitle: 'El mejor cafe.',
 };
